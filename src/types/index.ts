@@ -15,16 +15,10 @@ export interface Expense {
   updatedAt: string;
 }
 
-export type ExpenseCategory =
-  | 'food'
-  | 'transportation'
-  | 'utilities'
-  | 'entertainment'
-  | 'shopping'
-  | 'health'
-  | 'education'
-  | 'travel'
-  | 'other';
+export interface ExpenseCategory {
+  id: number;        // Unique identifier for the category
+  name: string;  // Name of the category (e.g., "food", "transportation", etc.)
+}
 
 export interface ExpenseSummary {
   category: ExpenseCategory;

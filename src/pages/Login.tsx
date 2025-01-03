@@ -22,16 +22,20 @@ export const Login = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-
+    const jsonData = {
+      email: formData.email,
+      password: formData.password,
+    };
     try {
       const response = await fetch(
-        "http://192.168.3.119:5000/api/auth/register",
+        "http://192.168.3.119:5000/api/auth/login",
         {
           method: "POST",
+
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(formData),
+          body: JSON.stringify(jsonData),
         }
       );
       console.log(response);

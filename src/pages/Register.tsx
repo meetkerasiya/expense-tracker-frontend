@@ -34,6 +34,7 @@ export const Register = () => {
         "http://192.168.3.119:5000/api/auth/register",
         {
           method: "POST",
+          mode: "cors",
           headers: {
             "Content-Type": "application/json",
           },

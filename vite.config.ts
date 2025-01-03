@@ -12,8 +12,4 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  server: {
-    host: '192.168.2.27', // Allows access from any device on the network
-    port: 5174,      // Optional, defaults to 5173
-  },
 });
