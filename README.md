@@ -29,7 +29,7 @@ This is a frontend application built using **React v18**. The application provid
    `npm install` or `yarn install`
 4. Start the development server:  
    `npm start` or `npm run dev` or `yarn start`  
-   The application will run on `http://localhost:3000/`.
+   The application will run on `localhost`.
    
    
 ## Environment Variables
